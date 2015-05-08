@@ -5,10 +5,9 @@
     state:              present
     comment:            Seafile
     createhome:         yes
-    generate_ssh_key:   no
     home:               '{{ seafile_user_home }}'
-    move_home:          yes
     system:             yes
+    uid:                '{{ seafile_uid }}'
 
 - name: provision directories
   sudo:                 yes
